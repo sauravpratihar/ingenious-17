@@ -3,6 +3,9 @@
 // echo "<script>alert('".$_POST['album']."');</script>";
 
 session_start();
+if(!isset($_SESSION['email'])){
+  header("Location: ../index.php");
+}
 include_once "../api.php";
 // creating a album
 // echo $_SESSION['key'];
@@ -73,7 +76,9 @@ include_once "upload.php";
       <!--<input type="password" placeholder="password" name="password"/>-->
       <button type="submit" name="submit">Upload!</button>
 <!--       <p class="message">Not registered? <a href="#">Create an account</a></p>
- -->    </form>
+ -->    </form> 
+ <hr>
+ <a href="../logout.php"><p>Sign out!</p></a>
   </div>
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

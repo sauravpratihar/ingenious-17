@@ -9,6 +9,10 @@ if(isset($_POST['album_name'])){
 
 }
 
+else{
+    header("Location: ../index.php");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +49,7 @@ if(isset($_POST['album_name'])){
 </head>
 
 <body id="page-top" class="index">
-
+    <p align=right><a href="../index.php">Back</a></p>
     <!-- Navigation -->
     
     <!-- Header -->
