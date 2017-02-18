@@ -44,6 +44,9 @@ include_once "upload.php";
   
 <h2 style="text-align:center">Welcome <?= $_SESSION['name']; ?></h2>
   <div class="form">
+       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">View Album</button>
+       <hr>
+       
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create Album</button>
     <p class="center">OR</p>
 
@@ -62,7 +65,6 @@ include_once "upload.php";
           ?>
           </select>
           
-       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">View Album</button>
       
       <p style="margin-top:30px">Select Image(s)</p>
       <input type="file" name="image[]" multiple style="background-color:#4CAF50;color:white;" required><br>
