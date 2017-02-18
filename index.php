@@ -41,10 +41,11 @@ if(isset($_POST['submit'])){
   
 </head>
 
-<body>
+<body style="background-image:url('bg.jpg');background-repeat:no-repeat;background-size: 100%;
+">
   <div class="login-page">
   <div class="form">
-    
+  <img src="logo.png" style="text-align:center;width:50%">
     <h3 align=center>Login</h3>
     <form class="login-form" action="index.php" method="post">
       <input type="email" placeholder="email" name="email" required/>

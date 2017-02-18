@@ -41,11 +41,12 @@ include_once "upload.php";
   
 </head>
 
-<body>
+<body style="background-image:url('../bg.jpg');background-repeat:no-repeat;background-size: 100%;
+">
   <div class="login-page">
 
   
-<h2 style="text-align:center">Welcome <?= $_SESSION['name']; ?></h2>
+<h2 style="text-align:center;color:white;">Welcome <?= $_SESSION['name']; ?>!</h2>
   <div class="form">
        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">View Album</button>
        <hr>
@@ -70,7 +71,7 @@ include_once "upload.php";
           
       
       <p style="margin-top:30px">Select Image(s)</p>
-      <input type="file" name="image[]" multiple style="background-color:#4CAF50;color:white;" required><br>
+      <input type="file" name="image[]" multiple style="background-color:white;color:black;" required><br>
 
       <!--<input type="email" placeholder="email" name="email"/>-->
       <!--<input type="password" placeholder="password" name="password"/>-->

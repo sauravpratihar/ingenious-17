@@ -48,7 +48,8 @@ else{
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" style="background-image:url('../bg.jpg');background-repeat:no-repeat;background-size: 100%;
+">
     <p align=right><a href="../index.php">Back</a></p>
     <!-- Navigation -->
     
