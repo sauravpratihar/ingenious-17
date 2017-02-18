@@ -45,6 +45,7 @@ if(isset($_POST['submit'])){
   <div class="login-page">
   <div class="form">
     
+    <h3 align=center>Login</h3>
     <form class="login-form" action="index.php" method="post">
       <input type="email" placeholder="email" name="email" required/>
       <input type="password" placeholder="password" name="password" required/>
